@@ -4,7 +4,7 @@ import Test.Hspec
 
 main :: IO ()
 main = hspec $ do
-  describe "Test de ejemplo" $ do
-    it "El pdepreludat se instaló correctamente" $ do
-      doble 1 `shouldBe` 2
+  describe "mandarAlAnio" $ do
+    it "mandarAlAnio" $ do
+      mandarAlAnio 400 aku `shouldBe` UnPersonaje {nombre = "Aku", salud = 500.0, elementos = [UnElemento {tipo = "Maldad", ataque = <una función>, defensa = <una función>},UnElemento {tipo = "Proteccion", ataque = <una función>, defensa = <una función>}], anioPresente = 400.0}
 
