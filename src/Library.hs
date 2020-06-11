@@ -112,5 +112,5 @@ defenderse atacante = foldl (defenderseConElemento) atacante (elementos atacante
 luchar :: Personaje -> Personaje -> (Personaje, Personaje)
 luchar (UnPersonaje nombre 0 elementos anio) aku = (aku, (UnPersonaje nombre 0 elementos anio))
 luchar jack (UnPersonaje nombre 0 elementos anio) = (jack, (UnPersonaje nombre 0 elementos anio))
-luchar jack aku = luchar (((atacar aku).defenderse) jack) jack
+luchar jack aku = luchar (atacar aku jack) (defenderse jack)
 
